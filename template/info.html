@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="icon" href="{{ url_for("static", filename ="favicon.ico") }}">
+        <link rel="stylesheet" href="{{ url_for("static", filename ="css/style.CSS") }}">
+    </head>
+    <body>
+        <table>
+            {% for k in imane %}
+            <tr>
+                <td>{{ k }}</td>
+                <td>{{ imane[k] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
